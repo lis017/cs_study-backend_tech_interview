@@ -43,6 +43,9 @@ DNS 룩업 과정은 크롬의 경우 브라우저 → hosts 파일 → DNS Cach
 ->(구체적) HTTP URI(Uniform Resource Identifier)를 통해 자원(Resource)을 명시하고, 
    HTTP Method(POST, GET, PUT, DELETE)를 통해 해당 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.
 
+REST API란 ?
+-> REST 기반으로 서비스 API를 구현한 것
+
 
 
 
@@ -61,6 +64,10 @@ DNS 룩업 과정은 크롬의 경우 브라우저 → hosts 파일 → DNS Cach
 
 
 ★(면접용x, 심심할때 훑어볼 정도, cs공부 정리용)
+API란?
+-> API(Application Programming Interface)란
+데이터와 기능의 집합을 제공하여 컴퓨터 프로그램간 상호작용을 촉진하며, 서로 정보를 교환가능 하도록 하는 것
+
 DNS란?
 ->도메인 이름 시스템(DNS)(Domain Name System)은 사람이 읽을 수 있는 도메인 이름(예: www.amazon.com)을 머신이 읽을 수 있는 IP 주소(예: 192.0.2.44)로 변환합니다. (반대도 가능해 보임)(like. 전화번호부)
 
