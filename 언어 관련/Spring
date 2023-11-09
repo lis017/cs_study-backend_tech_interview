@@ -54,7 +54,9 @@ POJO란 무엇인가요? Spring Framework에서 POJO는 무엇이 될 수 있을
 -> POJO는 프레임워크 인터페이스, 클래스를 구현하거나 확장하지 않은 단순한 클래스로 Java에서 제공하는 API 외에 종속되지 않습니다.
 -> 스프링에서는 도메인과 비즈니스 로직을 수행하는 대상이 POJO대상이 될 수 있습니다.
 
-
+Spring Web MVC에서 요청 마다 Thread가 생성되어 Controller를 통해 요청을 수행할텐데, 어떻게 1개의 Controller만 생성될 수 있을까요?
+-> 생성한 Controller 클래스에 대한 정보가 Method Area(메서드 영역)에 올라감
+  모든 Thread가 객체의 메서드를 공유할 수 있기 때문에 Controller는 1개만 생성됩니다.
 
 
 
