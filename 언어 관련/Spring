@@ -58,6 +58,12 @@ Spring Web MVC에서 요청 마다 Thread가 생성되어 Controller를 통해 �
 -> 생성한 Controller 클래스에 대한 정보가 Method Area(메서드 영역)에 올라감
   모든 Thread가 객체의 메서드를 공유할 수 있기 때문에 Controller는 1개만 생성됩니다.
 
+Filter는 Servlet의 스펙이고, Interceptor는 Spring MVC의 스펙입니다. Spring Application에서 Filter와 Interceptor를 통해 예외를 처리할 경우 어떻게 해야 할까요?
+
+Filter는 ErrorController에서 처리
+Interceptor는 @ControllerAdvice를 적용해서 처리
+이유: Filter는 내부, Interceptor는 외부라
+
 
 
 
