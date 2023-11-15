@@ -89,6 +89,7 @@ OSI7계층과 그 존재 이유, TCP/IP 4계층에 대해 설명해보세요.
 
 웹 서버 소프트웨어(Apache, Nginx)는 OSI 7계층 중 어디서 작동하는지 설명해보세요.
 -> 웹 서버 소프트웨어는 4계층의 TCP/IP 프로토콜과 7계층의 HTTP 프로토콜을 활용하여 동작합니다.
+//복습
   
 웹 서버 소프트웨어(Apache, Nginx)의 서버 간 라우팅 기능은 OSI 7계층 중 어디서 작동하는지 설명해보세요.
 -> Layer 4 (Transport Layer), Layer 7 (Application Layer) 입니다. 
