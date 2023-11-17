@@ -95,6 +95,7 @@ OSI7계층과 그 존재 이유, TCP/IP 4계층에 대해 설명해보세요.
 -> Layer 4 (Transport Layer), Layer 7 (Application Layer) 입니다. 
 L4 에서는 TCP/UDP 포트 정보를 토대로 라우팅 기능이 제공됩니다.
 L7에서는 TCP/UDP 뿐만 아니라 HTTP의 URI 등을 토대로 라우팅 기능이 제공 됩니다. 
+//복습
 
 
 
