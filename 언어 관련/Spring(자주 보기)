@@ -68,6 +68,7 @@ Filter는 Servlet의 스펙이고, Interceptor는 Spring MVC의 스펙입니다.
 Spring Application에서 Filter와 Interceptor를 통해 예외를 처리할 경우 어떻게 해야 할까요?
 -> Filter는 ErrorController에서 처리
 Interceptor는 @ControllerAdvice를 적용해서 처리
+//복습
 
 Spring Application을 구동할 때 메서드를 실행시키는 방법에 대해 설명해주세요.
 ->일반적으로 CommandLineRunner, ApplicationRunner를 구현한 클래스를 만들어서 실행시키는 2가지 방법이 있습니다.
