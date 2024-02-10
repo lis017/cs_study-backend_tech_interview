@@ -65,6 +65,7 @@ GC가 무엇인지, 필요한 이유는 무엇인지, 동작방식에 대해 설
 
 자바의 원시타입들은 무엇이 있으며 각각 몇 바이트를 차지하나요?
 -> boolean(1), char(2), byte(1), short(2), int(4), long(8), float(4), double(8)
+    //복습
 
 접근 제어자의 종류와 이에 대해 설명해주세요.
 -> private, default, protected, public이 있습니다. private은 해당 클래스 내에서만 접근 가능하고, default는 해당 패키지, 
