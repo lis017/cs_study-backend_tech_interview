@@ -68,6 +68,7 @@ TCP 3, 4 way handshake에 대해서 설명해보세요.
 
 HTTP와 HTTPS의 차이점에 대해서 설명해보세요.
 -> HTTPS는 패킷을 암호화합니다.
+//복습
 
 HTTPS에 대해서 설명하고 SSL Handshake에 대해서 설명해보세요.
 -> HTTPS는 HTTP에서 패킷을 암호화한 것.
