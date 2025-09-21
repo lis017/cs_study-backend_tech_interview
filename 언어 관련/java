@@ -1,3 +1,7 @@
+int와 integer차이점
+-> int - 작고 빠름
+Integer List, Map등에서 사용가능
+
 JVM의 구조와 Java의 실행방식을 설명해주세요.
 -> JVM의 역할은 자바 애플리케이션을 클래스 로더를 통해 읽어 자바 API와 함께 실행하는 것입니다.
 -> JVM의 구조는 Class Loader, Execution engine, Runtime Data Area, JNI, Native Method Library로
