@@ -10,6 +10,9 @@ entity는 뭐하는앤가?
 dto란?
 ->클라이언트와 서버 사이 연결 관리
 
+spring의 대부분 클래스 연결성
+-> controller - dto - service - entity - db 흐름을 가짐
+
 Spring DI/IoC는 어떻게 동작하나요?
 -> IoC(제어의 역전)은 프로그램의 제어 흐름을 직접 제어하는 것이 아니라 
   외부에서 관리하는 것
