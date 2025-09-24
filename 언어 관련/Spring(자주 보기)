@@ -10,6 +10,9 @@ entity는 뭐하는앤가?
 dto란?
 ->계층와 계층사이의 따까리(보안등을 위해 연결만 시킴 /자기도 값은 모름 / 양쪽에서 받아서 쓰는거임)
 
+service란?
+데이터 처리/검증 등 핵심 역할 수행
+
 spring의 대부분 클래스 연결성
 -> controller - dto - service - entity - db 흐름을 가짐
 
