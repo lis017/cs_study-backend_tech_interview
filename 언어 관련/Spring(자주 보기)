@@ -8,20 +8,24 @@ controller란
 클라이언트 요청받고,응답하는 계층
 (실제 일은 service에게 요청하고 얘는 반환만 함)
 
-entity는 뭐하는앤가?
--> db와 직접매핑.
- db의 구조대로 자료형을 씀
-그래서 얘가 왜 필요함?) 이래야 db에 값 수정할때
-INSERT등 하나하나 안쓰고 부드럽게 db 수정 가능
-
 dto란?
 ->계층와 계층사이의 따까리(보안등을 위해 연결만 시킴 /자기도 값은 모름 / 양쪽에서 받아서 쓰는거임)
 
 service란?
 데이터 처리/검증 등 핵심 역할 수행
 
+entity는 뭐하는앤가?
+-> db와 직접매핑.
+ db의 구조대로 자료형을 씀
+그래서 얘가 왜 필요함?) 이래야 db에 값 수정할때
+INSERT등 하나하나 안쓰고 부드럽게 db 수정 가능
+
+repository?
+-> entoty객체를 db와 최종 연결하는 db핵심로직 계층
+db에 값넣어라 수정해라등 최종명령 하는계층
+
 spring의 대부분 클래스 연결성
--> controller - dto - service - entity - db 흐름을 가짐
+-> controller - dto - service - entity - repository - db 흐름을 가짐
 
 Spring DI/IoC는 어떻게 동작하나요?
 -> IoC(제어의 역전)은 프로그램의 제어 흐름을 직접 제어하는 것이 아니라 
