@@ -40,7 +40,10 @@ ACID에 대해서 설명해주세요.
 
 JOIN에 대해서 설명해주세요.
 -> 조인은 두 개의 테이블을 서로 묶어서 하나의 결과를 만들어 내는 것
--> INNER JOIN, OUTER JOIN, CROSS JOIN, SELF JOIN 4가지가 있다.
+-> INNER JOIN(교집합 보여줌),
+ OUTER JOIN(합집합 보여줌),
+ CROSS JOIN(곱집합. 모든행 조합해서 보여줌),
+ SELF JOIN(자기자신 조인. 계층,관계등 표현할때) 4가지가 있다.
 //복습
 
 RDBMS vs NOSQL에 대해서 설명해주세요.
