@@ -61,6 +61,9 @@ Elastic Search의 인덱스구조와 RDBMS의 인덱스 구조의 차이에 대�
 -> Elastic Search는 Inverted-Index 구조로 데이터를 저장합니다.
 -> 특정 단어가 출현하는 doc을 저장하는 것입니다. 
 -> 반면 RDBMS는 대부분 B-Tree와 그와 유사한 인덱스를 사용합니다.
+-> “B-Tree는 하나의 노드에 여러 키를 저장해서 트리 높이를 낮추는 ‘균형 트리’입니다.
+DB나 파일시스템에서 대용량 데이터를 빠르게 검색하기 위해 사용되고,
+삽입·삭제·검색이 모두 O(log N)입니다.”
 //복습
 
 Elastic Search의 키워드 검색과 RDBMS의 LIKE 검색의 차이에 대해 설명해주세요.
