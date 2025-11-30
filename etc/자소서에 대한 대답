@@ -7,3 +7,7 @@ nginx왜 썼는가?
 Lombok이란?
 ->“Lombok은 자바에서 반복적으로 작성해야 하는 getter/setter, 생성자, toString 같은 코드를
 어노테이션으로 자동 생성해주는 라이브러리입니다.
+
+추상클래스 쓴 경험?
+-> spring security쓸때, auth에 제공되는 정보를 추가하기위해
+Detail클래스에 추상클래스User를 extends해서, 추가정보를 보도록 수정한 경험.
