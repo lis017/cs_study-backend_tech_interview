@@ -5,8 +5,9 @@ nginx왜 썼는가?
 또한 여러 서버로 트래픽을 분산하는 Load Balancer 역할도 수행해서 대규모 트래픽에 안정적으로 대응할 수 있습니다.”
 
 db인덱싱 해봤냐?
-->full text index를 만들어서 검색기능 향상.
-secondly index도 구현해 보았습니다.
+->jpa로 검색해보니 sql의 LIKE검색으로 전체탐색 발생
+->상품명 Secondry index생성으로 이분탐색으로 성능향상
+-> 추후 성능개선 고민하다 full text index로 업그레이드
 
 Lombok이란?
 ->“Lombok은 자바에서 반복적으로 작성해야 하는 getter/setter, 생성자, toString 같은 코드를
