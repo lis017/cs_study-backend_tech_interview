@@ -6,6 +6,7 @@ PRIMARY KEY: 기본키, 중복 안 되고 NULL 불가
 
 FOREIGN KEY: 다른 테이블의 키를 참조해 관계를 유지
 테이블간 관계 보장
+(제2정규화 같은거)
 
 UNIQUE: 중복 불가
 
