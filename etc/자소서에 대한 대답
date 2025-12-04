@@ -19,7 +19,9 @@ Identification & Authentication Failures -             비밀번호를 평문 �
 Broken Access Control -                               인증되지 않은 사용자가 특정 페이지에 접근하거나, 로그인 유저만 볼 수 있는 데이터를 훔칠 위험 / 권한 검증이 없으면 누구든지 수정·삭제 요청을 보낼 수 있음
 등이 있고 말씀드린 3가지를 참고하여 직접 문제를 해결한 경험이있습니다. 어떻게 해결했는지 말씀드려도 되겠습니까?
 OWASP TOP10을 참고해 해결한 경험은?
--?
+-> SSRF -> Presigned URL사용으로 서버가 S3에 파일올리는걸 서버가 직접 하지 않아, 빈틈을 아예 막아서 서버가 바쁜동안 안좋은 접근을 막음
+Identification & Authentication Failures -> BCryptPasswordEncoder 써서 비밀번호를 해시+솔트 처리하여 저장 해서 해결
+Broken Access Control -> 고객만 접근하거나, 어떤 권한 이상만 볼수있거나 할때 AUTH써서 막거나 특정누군가에게만 공개.
 
 Lombok이란?
 ->“Lombok은 자바에서 반복적으로 작성해야 하는 getter/setter, 생성자, toString 같은 코드를
