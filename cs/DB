@@ -1,7 +1,11 @@
 inverted index(full trxt index)가 b-tree(secondery index)보다 검색에 좋은 이유
 ->정확도 랭킹 제공(앞, 자주). 검색품질 좋음
-->앞단어 아닐때도 이분탐색(빠름. 대용량 트래픽에서 
-->
+->앞단어 아닐때도 이분탐색(빠름. 대용량 데이터에서 압도적 빠름
+
+inverted index 특이점
+-> 한글은 ngramparser쓰고
+2음절씩 끊어서 저장.
+-> 3글자든 긴 글자는 2글자의 조합으로 검색가능
 
 QueryDSL?
 ->“QueryDSL은 JPA에서 사용하는 타입 안전한 쿼리 작성 라이브러리.
