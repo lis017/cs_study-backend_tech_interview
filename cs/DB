@@ -1,3 +1,5 @@
+inverted index(full trxt index)가 b-tree보다 검색에 좋은 이유
+
 QueryDSL?
 ->“QueryDSL은 JPA에서 사용하는 타입 안전한 쿼리 작성 라이브러리.
 문자열로 작성하는 JPQL의 단점을 보완해서,
