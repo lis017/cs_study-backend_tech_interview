@@ -16,6 +16,13 @@ Spring의 @Async는 프록시 기반 AOP로 메서드 호출을 가로채고,
 -> 실무에선 ThreadPoolTaskExecutor 필수
 (안하면 쓰레드 무한증식 -> 서버터짐)
 (쓰레드 개수와 큐를 제한하는것.)
+@주의점2
+-> 기본 트랜잭션된 함수내에서 Async쓰면 async함수는 트랜잭션 포함안됨 / async어노테이션 바로위or아래에 @Tracsactional 써야 적용됨
+@주의점3
+-> 예외발생시
+@Async는 예외가 호출부로 전파되지 않기 때문에
+AsyncUncaughtExceptionHandler로 로그·알림을 보장하거나,
+중요 로직은 CompletableFuture로 예외를 명시적으로 처리해야함
 
 같은 클래스 내부에서 @Async 호출하면?
 -> X. 비동기 안됨.
