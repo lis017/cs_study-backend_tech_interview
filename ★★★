@@ -30,6 +30,10 @@ AsyncUncaughtExceptionHandler로 로그·알림을 보장하거나,
 (꼭 다른클래스에서 호출해야함(bean간 호출))
 (프록시란? : 실제 객체 앞에 끼워진 '대리객체'
 / Spring은 이 프록시를 통해서만 @Async, @Transactional, @Cacheable 같은 기능을 적용합니다.)
+
+@Async 반환 타입
+-> CompletableFuture<T> / 추천  (T는 String등 타입)
+void / 결과 못 받음
 --------
 외부 API가 뭐죠?
 -> 내가 만든 서버가 아닌 다른회사·서비스가 제공하는 기능·데이터를 HTTP요청으로 사용하는것
