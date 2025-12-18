@@ -74,7 +74,7 @@ Thread 안전성 문제는 해결했는가?
 + 충돌시 db가 락.롤백.차단 수행)
 (향후)동시에 동일 데이터에 대한 upsert가 발생할 수 있는 경우를 대비해서는,
 향후 unique constraint나 @Transactional 기반의 정합성 보완이 필요하다고 인지하고 있습니다.
-
+(unique constraint: db에서 데이터 강제 중복금지 / @Transactional: insert후 update하는데 insert하고, update전에 예외발생시 정합성 깨짐. 그걸 보완)
 
 --------
 외부 API가 뭐죠?
