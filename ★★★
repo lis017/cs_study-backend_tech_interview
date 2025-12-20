@@ -309,7 +309,7 @@ docker images 명령어로 SIZE를 비교했습니다.”
 ->외부 API 지연이 사용자 응답에 영향 주지 않도록 최근데이터 응답후, @Async를 써서 비동기 백그라운드 upsert 처리 / 응답지연회피
 ----------------------------------------------
 Spring Data JPA Custom Repository가 뭔가요?
--> Spring Data JPA에서 기본 Repository 인터페이스로 해결하기 어려운
+-> 기본 Repository 인터페이스로 해결하기 어려운
 복잡한 조회나 동적 쿼리를 구현하기 위해
 개발자가 직접 구현체를 만들어 확장하는 패턴입니다.
 
