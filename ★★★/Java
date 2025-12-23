@@ -1,2 +1,4 @@
-사용한 java, jdk버전?
--> java: 21 / jdk: 21 / 
+사용한 java, jdk, springboot 버전?
+-> java: 21 
+/ jdk: 21 
+/ Spring Boot 3.x 버전을 사용했고, 프로젝트에서는 3.4.12를 사용했습니다.
