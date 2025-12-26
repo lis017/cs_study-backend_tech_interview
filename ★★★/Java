@@ -19,6 +19,41 @@ JDK 21과의 호환성을 고려해 선택했습니다.”
 다만 더 최신 LTS인 21을 사용하면 성능 개선과 향후 확장성 측면에서 이점이 있어
 Spring Boot 3.4와의 공식 호환 범위 내에서 선택했습니다.”
 -----------------------
+(프레임워크) 스프링 filter와 interceptor의 차이점에대해 기술하세요.
+(간단)
+->“Filter는 서블릿 컨테이너 레벨에서 동작하여 요청을 스프링으로 넘기기 전에 공통 처리를 하고,
+Interceptor는 스프링 MVC 레벨에서 Controller 실행 전후의 흐름을 제어하는 역할을 합니다.”
+->“보안이나 인코딩 같은 전역 처리는 Filter가 적합하고, 로그인 체크나 권한 검사는 Interceptor가 더 적합합니다.”
+(심화)
+->Filter: 
+(정의)서블릿 컨테이너(Tomcat) 에서 동작
+(특징)요청/응답 자체를 전처리하는 용도
+  스프링 진입 전/후 요청을 가로챔
+  기본적으로 spring bean아님(but. 설정하면 가능)
+(사용처)인코딩 처리
+  인증/인가 (JWT 토큰 검증)
+  로깅, XSS 방어
+Interceptor: 
+(정의)DispatcherServlet과 Controller 사이에서 요청·응답을 가로채 공통 로직을 처리하는 컴포넌트입니다.
+스프링 MVC에서 제공
+Controller 실행 전/후 요청을 가로챔
+(특징)“인터셉터는 스프링 빈으로 등록해서 사용하는 컴포넌트다”
+//컴포넌트: 특정 기능을 수행하는 독립적인 구성 단위 / ex.) @Component, @Service, @Repository, @Controller
+(사용처)로그인 체크
+  권한 검사
+  Controller 공통 로직
+  요청/응답 로깅
+->(흐름) Client → Filter → DispatcherServlet → Interceptor → Controller
+
+DispatcherServlet은?  //(Servlet의 한 종류)
+->“DispatcherServlet은 스프링 MVC에서 모든 요청을 중앙에서 받아 적절한 컨트롤러로 분배하고 응답까지 관리하는 프론트 컨트롤러입니다.”
+->(심화)DispatcherServlet이 어떤 Controller(= Handler) 가 처리할지 결정. 그 Controller에게 요청 처리 책임을 위임
+
+(안봐도됨)
+서블릿(Servlet)이란?
+->(간단)서블릿은 HTTP 요청을 처리하기 위한 자바 웹 컴포넌트이며, 톰캣 같은 서블릿 컨테이너에서 실행된다.
+-> 웹 요청(Request)을 받아서 비즈니스 로직을 처리하고 응답(Response)을 만들어주는 자바 프로그램입니다.
+-----------------------
 자식클래스에서 오버라이딩했는데
 부모 함수 쓰려면?
 ->super.함수명()
