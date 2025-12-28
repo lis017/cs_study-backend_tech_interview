@@ -10,7 +10,7 @@ Security는 인증·인가 전용 프레임워크
 ★->“Interceptor는 인증이 끝난 이후의 요청 흐름 제어에는 적합하지만,
 인증 자체를 책임지기에는 기능과 안정성 면에서 한계가 있습니다.”
 ★로그인/ 권한(Role) /화면 분기 /세션 관리 /보안 등 기능 만드는데, 이건 Interceptor 범위 초과 ->그래서 Security 선택 = 설계 판단 능력
-
+//filter는 java / interceptor는 spring쪽이다. 대충
 
 --------------------------------
 Spring AOP란?
