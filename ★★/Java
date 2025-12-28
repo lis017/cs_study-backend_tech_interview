@@ -1,0 +1,12 @@
+직렬화(Serialization)
+→ 객체를 네트워크/응답용 형태(JSON, XML 등)로 변환하는 과정
+
+직렬화 문제란
+->엔티티를 JSON으로 바꾸는 과정에서 JPA 내부 구조 때문에 에러·무한 참조·성능 문제가 발생하는 것을 말합니다.
+//Spring API 기준:자바 객체 → Jackson → JSON
+
+직접겪은 직렬화문제 경험및 해결경험
+-> Holiday @Entity의 @ManyToOne필드 country;는 프록시객첸데, 컨트롤러에서 JSON변환시(고객 주려면)
+LazyInitializationException(세션종료) OR 프록시 내부구조 노출 위험.
+->(성능문제)JSON 변환 중 연관 엔티티 접근 -> Lazy 로딩이 의도치 않게 연쇄 실행-> N+1 폭발
+해결-> DTO로 변환해서 반환.
