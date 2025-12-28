@@ -1,3 +1,18 @@
+왜 (로그인,권한체크등) Interceptor를 보통 쓰는곳에 Spring Security Filter Chain를 사용했죠?
+->“인증·인가처럼 보안이 핵심인 영역은
+Interceptor보다 Spring Security의 필터 체인이 더 적합하다고 판단했습니다.”
+->Interceptor는 단순 제어용,
+Security는 인증·인가 전용 프레임워크
+->결정적이유
+1. 인증·인가 책임을 프레임워크에 위임(비밀번호 비교, 세선생성 등)
+2. Filter 단계에서 처리 (Interceptor보다 앞단)(보안은 최대한 앞에서 막는 게 정석)
+3.선언적 권한 제어 가능(EX.sec:authorize="hasAuthority('regular')")
+★->“Interceptor는 인증이 끝난 이후의 요청 흐름 제어에는 적합하지만,
+인증 자체를 책임지기에는 기능과 안정성 면에서 한계가 있습니다.”
+★로그인/ 권한(Role) /화면 분기 /세션 관리 /보안 등 기능 만드는데, 이건 Interceptor 범위 초과 ->그래서 Security 선택 = 설계 판단 능력
+
+
+--------------------------------
 Spring AOP란?
 ->AOP는 공통 로직을 분리해서 필요한 지점에 자동으로 끼워 넣는 기술입니다.
 ->Spring에서는 이를 프록시 기반으로 구현
