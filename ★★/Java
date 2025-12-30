@@ -10,3 +10,12 @@
 LazyInitializationException(세션종료) OR 프록시 내부구조 노출 위험.
 ->(성능문제)JSON 변환 중 연관 엔티티 접근 -> Lazy 로딩이 의도치 않게 연쇄 실행-> N+1 폭발
 해결-> DTO로 변환해서 반환.
+------------------------------
+extends, implemetns 각각 뭐죠?
+->extends는 “상속(물려받기)”, implements는 “구현(약속을 지키기)”입니다.
+->interface는 implements로 구현하고, interface를 조합할 땐 extends를 사용합니다.
+->한 줄 요약
+extends: 이미 있는 기능을 물려받는다
+implements: 정해진 메서드를 반드시 구현한다
+ex) repocustom을 repository는 extends(jpa랑 조합해서)
+                  impl은 implements(직접 구현해야해서)
