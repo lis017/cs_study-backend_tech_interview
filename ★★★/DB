@@ -26,3 +26,4 @@ ex)SELECT * FROM user WHERE id = '입력값'
 
 SQL Injection 방어방법
 ->ORDER BY, 컬럼명은 enum 화이트리스트(정석, 나도 이걸로할듯)
+//화이트리스트: 허용된값만 들어옴 / enum: 뭐 허용할지 정하는놈
