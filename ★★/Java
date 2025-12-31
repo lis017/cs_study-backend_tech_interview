@@ -21,3 +21,4 @@ ex) repocustom을 repository는 extends(jpa랑 조합해서)
                   impl은 implements(직접 구현해야해서)
 ->extends(상속)은 클래스끼리. 인터페이스끼리 가능.
 섞어서는 안됨
+->implements는 인터페이스상위, 클래스하위만 가능함.
