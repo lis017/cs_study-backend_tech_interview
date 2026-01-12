@@ -1,4 +1,8 @@
 lazy는 실사용 전에는 프록시객체가 그 위치를 차지하고있다.
+
+LAZY vs EAGER 차이
+연관관계에서(JOIN)에서
+참조하고 쓸때 로딩 vs 즉시로딩
 ---------------
 MyBatis가 가로챔 (프록시)의 원리
 -> MyBatis Mapper 가로채기는 Filter·Interceptor·AOP가 아니라, JDK 동적 프록시 기반의 프록시 객체 생성입니다.
