@@ -1,5 +1,5 @@
 entity에 Countrycode가 LAZY야.
-그럼 그 코드를 LAZY객체라고 하는건 좀 이상하고
+그럼 그거를 LAZY객체라고 하는건 좀 이상하고
 Countrycode필드에는 LAZY로딩을 위한 프록시 객체가 들어있다. 라고하래
 
 LAZY객체란
