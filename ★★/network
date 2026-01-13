@@ -1,3 +1,7 @@
+entity에 code가 LAZY야.
+그럼 그 코드를 LAZY객체라고 하는건 좀 이상하고
+code필드에는
+
 LAZY객체란
 LAZY를 포함한 ENTITY객체가 아닌
 엔티티객체에 있는 LAZY필드에 있는 프록시객체를 말함
