@@ -6,6 +6,10 @@ LAZY vs EAGER 차이
 ---------------
 Many to One과 One to Many에 대하여
 -> 둘다 Many테이블에서 One에 대한 FK를 저장함
+-> ✅ 매니투원 (Many → One)
+→ 여러 데이터가 하나를 참조
+✅ 원투매니 (One → Many)
+→ 하나가 여러 데이터를 소유
 ---------------
 MyBatis가 가로챔 (프록시)의 원리
 -> MyBatis Mapper 가로채기는 Filter·Interceptor·AOP가 아니라, JDK 동적 프록시 기반의 프록시 객체 생성입니다.
