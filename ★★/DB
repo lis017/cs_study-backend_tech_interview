@@ -10,6 +10,9 @@ Many to One과 One to Many에 대하여
 → 여러 데이터가 하나를 참조
 ✅ 원투매니 (One → Many)
 → 하나가 여러 데이터를 소유
+->to뒤에 있는게 해당필드.
+-> @OnetoMany면
+해당필드가 많다는거니 보통 컬렉션타입이어야함
 ---------------
 MyBatis가 가로챔 (프록시)의 원리
 -> MyBatis Mapper 가로채기는 Filter·Interceptor·AOP가 아니라, JDK 동적 프록시 기반의 프록시 객체 생성입니다.
