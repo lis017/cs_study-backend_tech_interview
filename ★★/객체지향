@@ -1,0 +1,3 @@
+mutable immutable 에 대해
+->mutable은 생성후 상태변경 가능한 객체
+immutable은 생성후 상태가 변하지않는 객체
