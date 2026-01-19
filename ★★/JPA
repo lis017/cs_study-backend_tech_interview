@@ -1,3 +1,6 @@
 fetch join과 page에서 주의점
 -> toMany등 컬렉션을 fetchjoin하면
 양 너무 많아져서 페이지가 틀어짐
+
+-----------
+@ManyToOne이 있어야 LAZY등이 있을때 프록시객체를 생성해줌.
