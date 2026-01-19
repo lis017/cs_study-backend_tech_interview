@@ -27,6 +27,9 @@ DB는 객체참조개념이 없음.
 
 FK는 주소저장이 아니라 값을 복사하는것.
 ---------------
+Join하는 주체는 
+-> queryDSL, JPQL, 메서드쿼리등이다.
+---------------
 MyBatis가 가로챔 (프록시)의 원리
 -> MyBatis Mapper 가로채기는 Filter·Interceptor·AOP가 아니라, JDK 동적 프록시 기반의 프록시 객체 생성입니다.
 👉 “MyBatis는 Mapper 인터페이스를 JDK Dynamic Proxy로 구현하고, 메서드 호출을 내부 InvocationHandler에서 가로챕니다.”
