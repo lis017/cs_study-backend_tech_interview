@@ -4,7 +4,7 @@ LAZY vs EAGER 차이
 연관관계에서
 참조하고 쓸때 로딩 vs 즉시로딩
 --------------
-fetch join은 join이라기보단 JPA에서쓰는 연관엔티티 로딩전략이다.
+fetch join은 join이라기보단 JPA에서쓰는 연관entity 로딩전략이다.
 ---------------
 Many to One과 One to Many에 대하여
 -> 둘다 Many테이블에서 One에 대한 FK를 저장함
