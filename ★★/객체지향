@@ -5,3 +5,5 @@ immutable은 생성후 상태가 변하지않는 객체
 -> immutable은 Thread-Safe하다.
 자바 백엔드에서 선호된다
 캐싱에 안전
+-> immutable은 동시성에 강점
+-> mutable은 성능에 강점(자주 변하는 Entity등)
