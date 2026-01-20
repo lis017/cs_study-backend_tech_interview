@@ -110,3 +110,14 @@ DispatcherServlet은?  //(Servlet의 한 종류)
 “어떤 기능을 반드시 제공해야 한다는 약속을 정의합니다.”
 (목적)‘구현체 교체와 다형성 확보’
 “예를 들어 결제 시스템에서 Payment는 인터페이스로 두고, KakaoPay, CardPay 같은 구현체를 자유롭게 교체하도록 설계합니다.”
+---------------------
+제네릭 사용경험
+->“제네릭 클래스를 직접 설계한 경험은 많지 않지만,
+컬렉션·JPA·Spring에서 제공하는 제네릭을 일상적으로 사용해왔습니다.”
+->List<String>
+Map<Long, Member>
+Optional<Member>
+JpaRepository<Member, Long>
+Page<Member>
+ResponseEntity<Member
+이것들이 다 제네릭 사용한것.
