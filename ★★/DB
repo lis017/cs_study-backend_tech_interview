@@ -5,6 +5,10 @@ LAZY vs EAGER 차이
 참조하고 쓸때 로딩 vs 즉시로딩
 --------------
 fetch join은 join이라기보단 JPA에서쓰는 연관entity 로딩전략이다.
+----------
+정합성
+-> 시스템 내부 일괸성을 따르고 규칙을 지키는가
+->항상 옳은결과 X
 ---------------
 Many to One과 One to Many에 대하여
 -> 둘다 Many테이블에서 One에 대한 FK를 저장함
