@@ -13,6 +13,9 @@ LazyInitializationException(세션종료) OR 프록시 내부구조 노출 위�
 -------------
 JVM(자바 버츄얼 머신)
 -> 자바 프로그램을 실행해주는 가상컴퓨터
+
+JDK>JRE>JVM
+이렇게 포함돼있음
 ------------------------------
 extends, implemetns 각각 뭐죠?
 ->extends는 “상속(물려받기)”, implements는 “구현(약속을 지키기)”입니다.
