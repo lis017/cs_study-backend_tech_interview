@@ -99,13 +99,13 @@ spring의 대부분 클래스 연결성
 -> controller - dto - service - entity - repository - db 흐름을 가짐
 
 Spring DI/IoC는 어떻게 동작하나요?
--> IoC(제어의 역전)은 프로그램의 제어 흐름을 직접 제어하는 것이 아니라 
-  외부에서 관리하는 것
-->DI(의존관계 주입)은         //Spring 프레임워크에서 지원하는 IoC의 형태로
-클래스 사이의 의존관계를 빈 설정 정보를 바탕으로 컨테이너가 자동으로 연결
-->스프링에서는 스프링 컨테이너 ApplicationContext를 이용하여 설정 정보를 생성, 등록하고
-필요한 객체를 생성자 혹은 setter를 통해 주입합니다.
-//복습
+->애플리케이션 시작
+Spring 컨테이너 생성
+@Component, @Service, @Repository, @Configuration 스캔
+Bean 객체 생성
+의존성 주입 (@Autowired, 생성자 주입)
+Bean 사용
+//IOC는 개념 DI는 그 ioc를 실현하는 구현방법
 
 Spring Bean이란 무엇인가요?
 -> IoC 컨테이너 안에 들어있는 객체
