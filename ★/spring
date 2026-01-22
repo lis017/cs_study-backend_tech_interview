@@ -1,4 +1,6 @@
+@Controller (HTML)는 MVC이고 (REST API아님)
+@RestController는 REST API이다.
+-----------------
 hibernate는 JPA를 구현한 구현체중 하나이다.
-
 ---------
 @RestController는 리소스를 JSON으로 표현하는 REST API 컨트롤러입니다.
