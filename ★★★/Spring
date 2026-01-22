@@ -32,6 +32,10 @@ AOP와 (Filter/Interxeptor)의 차이
 비즈니스공통로직 / 인증,세션
 서비스로직레벨(스프링내부) / 서블릿컨테이너(웹요청레벨)
 ------------
+Dispatvher Servlet은 
+->프론트 컨트롤러이다.
+-> 요청을 받아 HandlerMapping·Adapter로 컨트롤러를 실행하고, 결과를 View로 렌더링까지 연결하는 프론트 컨트롤러
+
 Dispatcher Servlet이 어떤 컨트롤러나 핸들러에 요청보낼지 정하는게 아니라
 Handller Mapping이 결정하고
 Dispatcher Servlet은 mapping와 adapter(어댑터)를 조율하는 조율자.(orchestrator)(오케스트레이터)
