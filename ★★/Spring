@@ -14,3 +14,6 @@ Ioc란
  → 인터셉터(postHandle / afterCompletion)
  → ViewResolver
  → 응답
+--------------
+Dispatcher servlet
+->“DispatcherServlet은 핸들러를 직접 호출하지 않고, HandlerAdapter를 통해 호출 방식을 추상화합니다.”
