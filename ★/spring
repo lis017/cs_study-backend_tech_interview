@@ -1,5 +1,8 @@
 @Controller (HTML)는 MVC이고 (REST API아님)
 @RestController는 REST API이다.
+---------
+@RestController나 @ResponseBody
+이런게 있으면 json등으로 자바객체를 변환해줌.
 -----------------
 hibernate는 JPA를 구현한 구현체중 하나이다.
 ---------
