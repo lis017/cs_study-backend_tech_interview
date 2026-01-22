@@ -1,3 +1,16 @@
 Ioc란
 ->IoC (Inversion of Control)
 객체 생성·생명주기·의존성 관리의 제어권이 개발자 → Spring 컨테이너로 역전되는 것
+
+-----------
+웹 요청 흐름도
+->클라이언트
+ → 필터(Filter)
+ → DispatcherServlet
+ → HandlerMapping
+ → HandlerAdapter
+ → 인터셉터(preHandle)
+ → 컨트롤러(Handler)
+ → 인터셉터(postHandle / afterCompletion)
+ → ViewResolver
+ → 응답
