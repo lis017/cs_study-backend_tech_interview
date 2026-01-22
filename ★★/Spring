@@ -17,3 +17,9 @@ Ioc란
 --------------
 Dispatcher servlet
 ->“DispatcherServlet은 핸들러를 직접 호출하지 않고, HandlerAdapter를 통해 호출 방식을 추상화합니다.”
+
+Handler Mapping이 왜 존재하냐?
+-> /user/1인지
+함수는 /order인지
+if로 모두보면 너무 비효율적.
+이 역할하는 mapper가 필요.
