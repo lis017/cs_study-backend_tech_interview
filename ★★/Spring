@@ -10,9 +10,10 @@ Ioc란
  → HandlerMapping
  → HandlerAdapter (어떻게 호출할지 책임)
  → 인터셉터(preHandle)
- → 컨트롤러(Handler)
+ → 컨트롤러(Handler)메서드 직접 호출
+ + 결과 받고
  → 인터셉터(postHandle / afterCompletion)
- → ViewResolver
+ → ViewResolver / MessageConverter 연결
  → 응답
 
 Dispatcher servlet
