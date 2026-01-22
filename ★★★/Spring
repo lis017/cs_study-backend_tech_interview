@@ -39,3 +39,7 @@ Dispatvher Servlet은
 Dispatcher Servlet이 어떤 컨트롤러나 핸들러에 요청보낼지 정하는게 아니라
 Handller Mapping이 결정하고
 Dispatcher Servlet은 mapping와 adapter(어댑터)를 조율하는 조율자.(orchestrator)(오케스트레이터)
+
+->큰 역할로 나누면
+1.컨트롤러 실행 조율
+2.view Rendering연결
