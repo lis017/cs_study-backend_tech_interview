@@ -6,9 +6,9 @@ Ioc란
 웹 요청 흐름도
 ->클라이언트
  → 필터(Filter)
- → DispatcherServlet
+ → DispatcherServlet (누가 처리할지 결정)
  → HandlerMapping
- → HandlerAdapter
+ → HandlerAdapter (어떻게 호출할지 책임)
  → 인터셉터(preHandle)
  → 컨트롤러(Handler)
  → 인터셉터(postHandle / afterCompletion)
