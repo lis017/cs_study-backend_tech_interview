@@ -10,9 +10,12 @@ Ioc란
  → HandlerMapping (컨트롤러 찾기)
  → HandlerAdapter (실행 가능한지 판단)
 + (컨트롤러 메서드 직접 호출)
+{
+(어뎁터 내부동작)
  → Interceptor.preHandle
  → 컨트롤러(Handler)
 -> Interceptor.postHandle
+}
 ->Dispatxher servlet이 결과 받고(ModelAndView or Object)
  → ViewResolver / MessageConverter 연결
 -> view.render()호출(HTTP응답에 직접씀)
