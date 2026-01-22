@@ -6,7 +6,7 @@ Ioc란
 웹 요청 흐름도
 ->클라이언트
  → 필터(Filter)
- → DispatcherServlet (누가 처리할지 결정)
+ → DispatcherServlet
  → HandlerMapping (컨트롤러 찾기)
  → HandlerAdapter (실행 가능한지 판단)
 + (어떻게 호출할지 책임)
