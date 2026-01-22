@@ -19,6 +19,20 @@ JDK>JRE>JVM
 
 JVM튜닝 목적
 ->GC횟수. 시간 줄여서 -> 응답시간 안정회
+
+heap구조
+Heap
+ ├─ Young Generation
+ │   ├─ Eden
+ │   ├─ Survivor S0
+ │   └─ Survivor S1
+ └─ Old Generation
+
+객체 흐름
+객체 생성 → Eden
+GC 시 살아있으면 → Survivor
+오래 살아남으면 → Old Gen
+Old Gen 가득 차면 → Full GC (끔찍함)
 ------------------------------
 extends, implemetns 각각 뭐죠?
 ->extends는 “상속(물려받기)”, implements는 “구현(약속을 지키기)”입니다.
