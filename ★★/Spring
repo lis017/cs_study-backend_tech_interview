@@ -7,15 +7,19 @@ Ioc란
 ->클라이언트
  → 필터(Filter)
  → DispatcherServlet (누가 처리할지 결정)
- → HandlerMapping
+ → HandlerMapping (컨트롤러 찾기)
  → HandlerAdapter (실행 가능한지 판단)
 + (어떻게 호출할지 책임)
++ (컨트롤러 메서드 직접 호출)
  → 인터셉터(preHandle)
- → 컨트롤러(Handler)메서드 직접 호출
- + 결과 받고
+ → 컨트롤러(Handler)
+ + 결과 받고(ModelAndView or Object)
  → 인터셉터(postHandle / afterCompletion)
+->Dispatxher servlet이 응답받음
  → ViewResolver / MessageConverter 연결
- → 응답
+-> view.render()호출
+-> Dispatcher Servlet이 렌더링 결과 받음
+ → Dispatcher servlet이 HTTP응답으로 클라이언트에게 전달
 
 Dispatcher servlet
 ->“DispatcherServlet은 핸들러를 직접 호출하지 않고, HandlerAdapter를 통해 호출 방식을 추상화합니다.”
