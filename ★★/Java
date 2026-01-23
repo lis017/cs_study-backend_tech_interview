@@ -28,6 +28,13 @@ Heap
  │   └─ Survivor S1
  └─ Old Generation
 
+heap
+->객체 태어나고 죽는곳
+->Heap = 스레드 간 공유 메모리
+그래서:
+동시성 이슈 가능
+객체 많으면 GC 부담 증가
+
 객체 흐름
 객체 생성 → Eden
 GC 시 살아있으면 → Survivor
