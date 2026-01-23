@@ -33,6 +33,9 @@ Heap
 GC 시 살아있으면 → Survivor
 오래 살아남으면 → Old Gen
 Old Gen 가득 차면 → Full GC (끔찍함)
+
+metaspace
+->클래스정보. 리플렉션정보 프록시클래스
 ------------------------------
 extends, implemetns 각각 뭐죠?
 ->extends는 “상속(물려받기)”, implements는 “구현(약속을 지키기)”입니다.
