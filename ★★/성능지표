@@ -1,0 +1,6 @@
+TPS
+->transactions per second
+->초당 처리 요청수
+
+TPS하락
+->시스템이 병목이나 장애로 처리능력을 잃어가는 신호
