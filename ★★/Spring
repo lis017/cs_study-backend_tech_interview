@@ -35,6 +35,10 @@ if로 모두보면 너무 비효율적.
 
 Dispatcher Servlet이 뷰 랜더링까지 하는데 그 과정이 무엇인가
 -> controller결과를 html등 화면으로 보이게 하는것과 JSON(네트워크 반환타입)등으로 변경하는것까지.
+---------------
+beanconfig의 클래스위에있는 @configuration는
+프록시 적용돼서 @Bean메서드 여러번 호출해도 싱글톤보장
+
 --------------
 DB종류별로 오류가 다 다른데 어떡하는가?
 (Repository의 예외변환이란?)
