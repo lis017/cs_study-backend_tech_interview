@@ -40,6 +40,7 @@ Dispatcher Servlet이 뷰 랜더링까지 하는데 그 과정이 무엇인가
 ---------------
 beanconfig의 클래스위에있는 @configuration는
 프록시 적용돼서 @Bean메서드 여러번 호출해도 싱글톤보장
+->@configuration이라는 AOP가 중복없이 가져다줌
 --------------
 DB종류별로 오류가 다 다른데 어떡하는가?
 (Repository의 예외변환이란?)
