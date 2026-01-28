@@ -1,3 +1,6 @@
+Bean config에서 클래스에 붙이는 @Configuration
+->싱글톤 보장 공장(bean들의)
+------------
 @Controller (HTML)는 MVC이고 (REST API아님)
 @RestController는 REST API이다.
 ---------
