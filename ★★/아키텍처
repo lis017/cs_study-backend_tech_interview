@@ -1,0 +1,2 @@
+Dispatcher Servlet만이 프론트컨트롤러다.
+filter, interceptor등은 아니다.
