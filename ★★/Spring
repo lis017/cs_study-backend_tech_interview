@@ -38,6 +38,9 @@ Dispatcher Servlet이 뷰 랜더링까지 하는데 그 과정이 무엇인가
 ----------
 프록시는 진짜객체를 감싸고있음.
 ---------------
+싱글톤 Bean을 여러 객체가 호출하면
+1개의 Bean객체를 여러 객체가 동시에 사용한다.
+
 beanconfig의 클래스위에있는 @configuration는
 프록시 적용돼서 @Bean메서드 여러번 호출해도 싱글톤보장
 ->@configuration이라는 AOP가 중복없이 가져다줌
