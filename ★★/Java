@@ -73,6 +73,10 @@ Thread Safe 꼬리질문
 예외타입분류o, 예외처리방식x
 컴파일러가 예외처리를 강제하느냐 여부
 
+->(간단)(이것만해도 충분느낌)
+“Checked Exception은 컴파일 시 예외 처리를 강제하고,
+Unchecked Exception은 런타임 예외로 강제하지 않습니다.”
+
 Checked Exception
 ->실패가 정상 흐름의 일부
 ->“이건 호출자가 대응해야 한다”
