@@ -74,11 +74,13 @@ Thread Safe 꼬리질문
 컴파일러가 예외처리를 강제하느냐 여부
 
 Checked Exception
+->실패가 정상 흐름의 일부
 ->“이건 호출자가 대응해야 한다”
 -> 컴파일 시점에 강제 처리되는 예외
 ->Checked: 반드시 try-catch 또는 throws 필요
 
 Unchecked Exception
+->실패는 버그 / 상태 오류
 ->“이건 버그다. 흐름 중단하고 상위에서 정리”
 -> 런타임에 발생하며 선택적으로 처리하는 예외입니다.
 ->스프링 실무 거의 전부 Unchecked(외부 I/O한정 checked사용)
