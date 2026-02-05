@@ -84,6 +84,7 @@ Checked Exception
 ->Checked: 반드시 try-catch 또는 throws 필요
 
 Unchecked Exception
+->비즈니스/설계 오류로
 ->실패는 버그 / 상태 오류
 ->“이건 버그다. 흐름 중단하고 상위에서 정리”
 -> 런타임에 발생하며 선택적으로 처리하는 예외입니다.
