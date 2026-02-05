@@ -76,7 +76,7 @@ Checked Exception
 
 Unchecked Exception
 -> 런타임에 발생하며 선택적으로 처리하는 예외입니다.
-
+->스프링 실무 거의 전부 Unchecked(외부 I/O한정 checked사용)
 주의점
 -> 트랜잭션시 unchecked는 롤백함. checked는 롤백안함.
 ------------------------------
