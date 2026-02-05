@@ -71,10 +71,12 @@ Thread Safe 꼬리질문
 -> @configuration있는 클래스에서도 무상태유지(싱글톤이라)
 ------------------
 Checked Exception
+->“이건 호출자가 대응해야 한다”
 -> 컴파일 시점에 강제 처리되는 예외
 ->Checked: 반드시 try-catch 또는 throws 필요
 
 Unchecked Exception
+->“이건 버그다. 흐름 중단하고 상위에서 정리”
 -> 런타임에 발생하며 선택적으로 처리하는 예외입니다.
 ->스프링 실무 거의 전부 Unchecked(외부 I/O한정 checked사용)
 주의점
