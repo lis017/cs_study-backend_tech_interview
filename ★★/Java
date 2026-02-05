@@ -69,6 +69,11 @@ Thread Safe 꼬리질문
 싱글톤 환경에서도 스레드 안전한 구조를 설계했습니다.
 
 -> @configuration있는 클래스에서도 무상태유지(싱글톤이라)
+------------------
+Checked Exception
+-> 컴파일 시점에 강제 처리되는 예외
+Unchecked Exception
+-> 런타임에 발생하며 선택적으로 처리하는 예외입니다.
 ------------------------------
 extends, implemetns 각각 뭐죠?
 ->extends는 “상속(물려받기)”, implements는 “구현(약속을 지키기)”입니다.
