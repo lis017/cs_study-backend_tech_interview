@@ -1,0 +1,4 @@
+OS메모리 구조
+-> JVM메모리
+Direct Memory(off-heap)
+Native 라이브러리
