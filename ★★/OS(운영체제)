@@ -2,3 +2,6 @@ OOM
 ->out of memory
 ->메모리가 다 차서 프로세스가 정상작동 못하는상태
 ->메모리부족으로 어플리케이션이 멈추거나 죽음
+
+Direct memory(off-heap)
+->“Direct Memory는 JVM 힙 밖에서 OS 메모리를 직접 사용하는 버퍼로, GC 부담을 줄이고 고성능 I/O를 위해 사용됩니다.”
