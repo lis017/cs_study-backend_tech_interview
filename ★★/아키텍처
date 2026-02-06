@@ -1,2 +1,5 @@
+QoS
+->시스템이 중요한 작업을 더 안정적으로, 덜 중요한 작업은 희생해서 전체 서비스 품질을 보장하는 개념입니다.
+
 Dispatcher Servlet만이 프론트컨트롤러다.
 filter, interceptor등은 아니다.
