@@ -16,6 +16,10 @@ ACID
 -------------
 SQL Injection: 
 ->입력값으로 SQL을 조작하는 해킹 기법
+
+방지법
+->preparedstatement
+->입력 그대로 sql사용이 아닌 문자열로 변환해서 받는것
 -----------
 read only Transactional
 ->스냅샷 안만듬
