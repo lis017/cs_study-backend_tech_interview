@@ -37,6 +37,13 @@ DB를 미리 잠그지 않아 성능이 좋습니다.
 ---------------
 Isolation Level(트랜잭션 격리수준)
 ->트랜잭션 간 데이터 간섭을 어느 수준까지 허용할지 정하는 격리 수준이며, 동시성과 정합성의 트레이드오프를 결정하는 핵심 설정입니다.
+->격리 수준 ↑ = 정합성 ↑ = 성능
+
+종류는?
+->Read Uncommitted 거의 안씀 (Dirty Read 가능)
+Read Committed Dirty Read 방지
+Repeatable Read Lost Update 방지
+Serializable 완전 직렬화
 -------------
 SQL Injection: 
 ->입력값으로 SQL을 조작하는 해킹 기법
