@@ -45,7 +45,7 @@ Isolation Level(트랜잭션 격리수준)
 ->Read Uncommitted 거의 안씀 (Dirty Read 가능)(롤백될 데이터 읽음)
 Read Committed Dirty Read 방지
 Repeatable Read Lost Update 방지
-Serializable 완전 직렬화
+Serializable 완전 직렬화,(범위락)
 -------------
 SQL Injection: 
 ->입력값으로 SQL을 조작하는 해킹 기법
