@@ -42,7 +42,7 @@ Isolation Level(트랜잭션 격리수준)
 ->격리 수준 ↑ = 정합성 ↑ = 성능
 
 종류는?
-->Read Uncommitted 거의 안씀 (Dirty Read 가능)
+->Read Uncommitted 거의 안씀 (Dirty Read 가능)(롤백될 데이터 읽음)
 Read Committed Dirty Read 방지
 Repeatable Read Lost Update 방지
 Serializable 완전 직렬화
