@@ -24,6 +24,10 @@ N+1이 무엇인가
 ->LAZY라서
 ✔ 객체 접근 시점에 DB 조회하기 때문
 
+fetch join 장점
+-> 원래 lazy때매 n번 select쿼리발생.
+but. 얘는 join 1개 쿼리로 다 가져옴.
+
 DTO projection 장점
 ->DTO Projection은 애초에 엔티티를 로딩하지 않고 필요한 컬럼만 직접 조회해 쿼리 자체를 줄입니다
 -----------
