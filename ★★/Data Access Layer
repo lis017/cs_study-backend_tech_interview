@@ -10,6 +10,8 @@ fetch join + 페이징 문제점
 ->페이징 전에 join 결과가 확장됨 → 메모리 낭비
 ->count 쿼리에도 join 포함 → 불필요한 join + full scan 가능성
 
-해결법
+(1,2)해결법
 ->조회시. DTO projection
 ->수정시. ID조회 후 IN조회 + fetch join
+(3)해결법
+-> count쿼리 분리(@Query쓰기)
