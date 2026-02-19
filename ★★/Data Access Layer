@@ -15,5 +15,6 @@ fetch join + 페이징 문제점
 ->수정시. ID조회 후 IN조회 + fetch join
 (3)해결법
 -> count쿼리 분리(@Query쓰기)
-(전체)해결법
+(전체)해결법(내 방법)
 -> fetch join배제후 count문 분리
+-> content문과 count문을 queryDSL로 각각 만듬
