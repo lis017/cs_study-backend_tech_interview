@@ -5,6 +5,10 @@ isolation level
 
 MVCC란?
 “여러 버전의 데이터를 유지해 락 없이 읽기 일관성을 보장하는 방식입니다.”
+MVCC = 버전 기반 동시성 제어
+읽기 시 락을 거의 안 건다
+Repeatable Read는 MVCC 기반
+Undo log로 이전 버전 관리 (MySQL InnoDB)
 
 inverted index(full text index)가 b+tree(secondery index)보다 검색에 좋은 이유
 ->정확도 랭킹 제공(앞, 자주). 검색품질 좋음
