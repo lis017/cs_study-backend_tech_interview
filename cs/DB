@@ -1,4 +1,4 @@
-inverted index(full text index)가 b-tree(secondery index)보다 검색에 좋은 이유
+inverted index(full text index)가 b+tree(secondery index)보다 검색에 좋은 이유
 ->정확도 랭킹 제공(앞, 자주). 검색품질 좋음
 ->앞단어 아닐때도 이분탐색(빠름. 대용량 데이터에서 압도적 빠름
 
@@ -76,7 +76,7 @@ Secondary Index -> (Inno db기준)해당값+pk값만 저장(리프노드에)
 Inno db는 클러스터드 인덱스 이다.
 B+트리를 사용한다
 
-“InnoDB에서는 테이블 자체가 Primary Key 기준으로 정렬된 B-Tree 구조입니다.”
+“InnoDB에서는 테이블 자체가 Primary Key 기준으로 정렬된 B+Tree 구조입니다.”
 
 클러스터드(Clustered)란?
 데이터가 인덱스 기준으로 정렬되어 저장되는 구조
