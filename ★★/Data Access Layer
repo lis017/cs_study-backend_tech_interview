@@ -18,3 +18,6 @@ fetch join + 페이징 문제점
 (전체)해결법(내 방법)
 -> fetch join배제후 count문 분리
 -> content문과 count문을 queryDSL로 각각 만듬
+-------------
+MyBatis왜썼니
+->“대량 delete는 JPA 영속성 컨텍스트와 동기화 이슈가 있어 관리 비용이 발생하기 때문에, SQL을 직접 제어할 수 있는 MyBatis가 더 안전하고 예측 가능했습니다.”
