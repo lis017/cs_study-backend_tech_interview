@@ -1,5 +1,7 @@
 undo log
 “Undo Log는 트랜잭션 롤백과 MVCC 구현을 위해 이전 버전을 저장하는 로그입니다.”
+
+Redo Log는 복구용, Undo는 되돌리기용 (구분만 알면 충분)
 --------------
 
 isolation level
