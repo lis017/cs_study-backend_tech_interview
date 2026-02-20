@@ -3,12 +3,22 @@ isolation level
 ->Repeatable Read
 👉 “내가 트랜잭션 시작하고 읽은 데이터는, 끝날 때까지 절대 안 바뀐 것처럼 보인다.”
 
+Read Committed는 커밋된 데이터만 보장하고, Repeatable Read는 동일 트랜잭션 내 조회 일관성을 보장하며, Serializable은 트랜잭션을 순차 실행처럼 동작시켜 팬텀까지 방지합니다.
+
+Repeatable Read는 MVCC로 구현됩니다. Serializable은 범위 락을 사용합니다.
+
+--------
+
 MVCC란?
 “여러 버전의 데이터를 유지해 락 없이 읽기 일관성을 보장하는 방식입니다.”
 MVCC = 버전 기반 동시성 제어
 읽기 시 락을 거의 안 건다
 Repeatable Read는 MVCC 기반
 Undo log로 이전 버전 관리 (MySQL InnoDB)
+
+Inno db는 MVCC기반
+
+--------
 
 inverted index(full text index)가 b+tree(secondery index)보다 검색에 좋은 이유
 ->정확도 랭킹 제공(앞, 자주). 검색품질 좋음
