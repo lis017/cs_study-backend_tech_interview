@@ -1,3 +1,7 @@
+undo log
+“Undo Log는 트랜잭션 롤백과 MVCC 구현을 위해 이전 버전을 저장하는 로그입니다.”
+--------------
+
 isolation level
 ->serializable: 트랜잭션을 순차 실행한 것처럼 보이게 만드는 최고 격리 수준
 ->Repeatable Read
