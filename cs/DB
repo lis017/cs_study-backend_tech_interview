@@ -91,6 +91,9 @@ B+트리를 사용한다
 리프 노드에 실제 데이터 저장
 Primary Key
 
+Oracle 인덱스구조
+-> B-tree
+
 ORM이 뭐죠?
 ->sql안쓰고 db조작 가능하게.
 ->JPA
