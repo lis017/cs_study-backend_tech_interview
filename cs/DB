@@ -42,6 +42,10 @@ db인덱싱이 뭐죠?
 데이터를 빠르게 찾아갈 수 있게 만드는 최적화 기법입니다.
 Primary·Secondary·FullText 같은 인덱스가 있으며, 조회 조건이 자주 사용되는 컬럼에 적용합니다.”
 
+인덱스 종류별 정리
+Primary Index -> 자동생성, (Inno db기준)클러스터드 인덱스, 실제데이터 저장(리프노드에)
+Secondary Index -> (Inno db기준)pk값만 저장(리프노드에)
+즉 조회가 2단계.
 
 세컨더리 인덱스란?
 -> PK(primary key)말고 다른컬럼으로 만든 인덱스. 
