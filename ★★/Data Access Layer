@@ -21,3 +21,13 @@ fetch join + 페이징 문제점
 -------------
 MyBatis왜썼니
 ->“대량 delete는 JPA 영속성 컨텍스트와 동기화 이슈가 있어 관리 비용이 발생하기 때문에, SQL을 직접 제어할 수 있는 MyBatis가 더 안전하고 예측 가능했습니다.”
+->JPQL로 지우면 DB날려도 Entity엔 남아있는 데이터불일치 발생.(Bulk)(영속성 컨텍스트 무시하고 진행)
+->더티체킹 안함
+
+✅ MyBatis를 Find/Delete에 쓴 이유
+조회는 동적 필터 조합이 많아 QueryDSL이 유리
+대량 delete는 JPA bulk 연산 시 영속성 컨텍스트 동기화 문제 존재
+flush / clear 관리 포인트 발생
+MyBatis는 SQL 직접 실행 → 예측 가능
+대량 처리 시 더티체킹 부담 없음
+실행 흐름이 단순하고 디버깅 용이
