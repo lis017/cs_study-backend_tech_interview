@@ -9,3 +9,5 @@ TTL(Time To Live)
 2️⃣ 데이터 정합성 보완
 캐시는 DB와 달리 실시간 동기화 아님
 TTL로 자동 갱신 유도
+
+redis에 저장이 될때. TTL도 적용됨
