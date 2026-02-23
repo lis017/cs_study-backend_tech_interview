@@ -13,3 +13,6 @@ TCP/IP접속한다 의미
 -----------------
 Nginx, ALB
 ->네트워크층 프록시 이다.
+---------------
+✔ JDBC (Java Database Connectivity)
+Java에서 DB에 SQL 보내는 표준 API
