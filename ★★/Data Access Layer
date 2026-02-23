@@ -1,3 +1,21 @@
+delete를 mybatis로 바꾼이유(JPA Delete문제점)
+->1️⃣ JPA Delete 문제점
+엔티티를 영속성 컨텍스트에 올림
+더티체킹 관리
+1건씩 delete 수행 가능성 있음
+flush 시점 관리 필요
+특히 조건 삭제:
+deleteByYearAndCountryCode(...)
+→ 내부적으로 select 후 delete 수행 가능
+→ 영속성 컨텍스트 관리 비용 발생
+2️⃣ MyBatis Delete 장점
+(DB 직접 제어)
+바로 SQL 실행
+영속성 컨텍스트 없음
+더티체킹 없음
+flush 개념 없음
+메모리 사용 적음
+--------------
 QueryDSL에서 count문 분리 안하면 뭐가 안좋은데?
 ->불필요한 join하게됨(자동이라)
 ->불필요한 order by
