@@ -33,3 +33,6 @@ cache stampede
 다중서버 (Redisson 등)
 → 한 명만 DB 조회
 3️⃣ 미리 재갱신 (Pre-Warming)
+
+synchronized 주의점
+->"락 대기 중에 다른 스레드가 캐시를 채울 수 있기 때문에, 락 내부에서 다시 한 번 캐시를 확인합니다."
