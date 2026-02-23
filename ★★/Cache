@@ -11,3 +11,13 @@ TTL(Time To Live)
 TTL로 자동 갱신 유도
 
 redis에 저장이 될때. TTL도 적용됨
+--------------
+대표 캐시 전략중 자주쓰이는 하나.
+① Cache-Aside (Lazy Loading) ⭐⭐⭐ 실무 최다
+
+1. Redis 조회
+2. 없으면 DB 조회
+3. Redis에 저장
+4. 클라이언트 반환
+✔ 장점: 구현 쉬움
+✔ 단점: 동시성 시 DB 쏠림 가능 (Cache Stampede)
