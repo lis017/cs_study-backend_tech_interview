@@ -12,3 +12,6 @@ DB 앞에 하나의 빠른 메모리 레이어를 추가한 것
 ------------
 Eviction
 ->"Redis는 maxmemory 설정 초과 시 LRU, LFU 등의 Eviction 정책으로 데이터를 제거합니다."
+
+LRU → 최근 사용하지 않은 키 제거
+LFU → 사용 빈도가 낮은 키 제거
