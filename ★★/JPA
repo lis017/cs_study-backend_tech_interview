@@ -4,7 +4,7 @@
 
 영속일때만 더티체킹 일어남.
 
-영속 아니면 insert도 update도 set()도 모두안됨.
+(jpa만)(mybatis는 별개)영속 아니면 insert도 update도 set()도 모두안됨.
 영속상태여야 하며 더티체킹도 영속이어야함
 ----------------
 fetch join과 page에서 주의점
