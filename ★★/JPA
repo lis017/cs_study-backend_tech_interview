@@ -2,6 +2,9 @@ fetch join과 page에서 주의점
 -> toMany등 컬렉션을 fetchjoin하면
 양 너무 많아져서 페이지가 틀어짐
 --------------
+JPA
+-> + 객체그래프 관리를 해준다
+--------------
 1️⃣ Persist가 뭐냐?
 Persist = 영속성 컨텍스트에 엔티티를 올려서 “DB에 INSERT 예약” 하는 행위입니다.
 ->트랜잭션 commit 시점에 flush 되면서 SQL 실행
