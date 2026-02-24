@@ -13,8 +13,11 @@ LazyInitializationException(세션종료) OR 프록시 내부구조 노출 위�
 -------------
 추상클래스 쓴 경험?
 -> spring security쓸때, auth에 제공되는 정보를 추가하기위해
-Detail클래스에 추상클래스User를 extends해서, 추가정보를 보도록 수정한 경험.
+Detail클래스에 추상클래스User를 extends해서, 추가정보를 보도록 수정한 경험
 -------------
+Heap증가 없었다
+-> 메모리 누수 없었다, 메모리가 young gc이후에 계속 커지지않았다.
+
 JVM(자바 버츄얼 머신)
 -> 자바 프로그램을 실행해주는 가상컴퓨터
 
