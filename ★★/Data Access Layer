@@ -1,4 +1,4 @@
-delete를 mybatis로 바꾼이유(JPA Delete문제점)
+delete를 mybatis로 바꾼이유(JPA Delete(+select. upadate)(쓰기.삭제)문제점)
 ->1️⃣ JPA Delete 문제점
 엔티티를 영속성 컨텍스트에 올림
 더티체킹 관리
