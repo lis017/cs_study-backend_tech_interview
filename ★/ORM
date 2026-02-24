@@ -1,4 +1,4 @@
-jpa의 method query로 save, delete시 내부적으로 persist, remove가 진행됨.
+jpa의 method query로 save, delete시 내부적으로 persist,merge, remove가 진행됨.
 ----------
 객체그래프란?
 Java
