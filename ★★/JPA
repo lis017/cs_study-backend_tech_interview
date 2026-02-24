@@ -12,3 +12,16 @@ Persist = 영속성 컨텍스트에 엔티티를 올려서 “DB에 INSERT 예�
 LAZY 부분은 실제 로딩전엔 프록시객체가 들어있다.
 
 @ManyToOne이 있어야 LAZY등이 있을때 프록시객체를 생성해줌.
+--------------
+6️⃣ Persist vs Remove
+Persist
+신규 엔티티 등록
+insert 예약
+flush 시 insert 실행
+Remove
+Java
+코드 복사
+entityManager.remove(entity);
+삭제 예약
+flush 시 delete 실행
+영속성 컨텍스트에서도 제거
