@@ -50,6 +50,7 @@ flush 시점에 SQL 자동 생성
 그래프 내 동일 객체 참조 보장
 같은 country를 여러 holiday가 참조해도
 한 트랜잭션 내에서는 동일 객체
+bulk연산시 불일치 주의
 ⑥ flush 시점
 트랜잭션 commit 직전
 변경된 객체들 전부 SQL로 변환
