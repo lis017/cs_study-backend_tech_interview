@@ -1,5 +1,9 @@
 gc log 어찌봤는가
 -> G1 GC 로그를 활성화하여 Pause Full, Pause Young 로그와 Heap Before/After 수치를 직접 분석 → Young GC 후 Heap이 정상 회수되고 Full GC가 발생하지 않음을 확인하여 GC 병목을 배제
+
+->Pause Full
+Pause Young
+Before -> After Heap 수치
 --------------
 직렬화(Serialization)
 → 객체를 네트워크/응답용 형태(JSON, XML 등)로 변환하는 과정
