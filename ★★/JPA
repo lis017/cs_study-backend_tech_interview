@@ -9,4 +9,6 @@ JPA
 Persist = 영속성 컨텍스트에 엔티티를 올려서 “DB에 INSERT 예약” 하는 행위입니다.
 ->트랜잭션 commit 시점에 flush 되면서 SQL 실행
 -----------
+LAZY 부분은 실제 로딩전엔 프록시객체가 들어있다.
+
 @ManyToOne이 있어야 LAZY등이 있을때 프록시객체를 생성해줌.
