@@ -6,6 +6,9 @@
 
 (jpa만)(mybatis는 별개)영속 아니면 insert도 update도 set()도 모두안됨.
 영속상태여야 하며 더티체킹도 영속이어야함
+
+더티체킹이 뭐냐
+->더티체킹은 영속 상태의 엔티티가 트랜잭션 커밋 시점에 flush 되면서 변경 여부를 비교해 UPDATE SQL을 생성하는 메커니즘입니다.
 ----------------
 fetch join과 page에서 주의점
 -> toMany등 컬렉션을 fetchjoin하면
