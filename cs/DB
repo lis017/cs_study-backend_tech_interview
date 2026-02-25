@@ -115,6 +115,7 @@ Inno db는
 “InnoDB는 MySQL 계열 스토리지 엔진이며
  클러스터드 인덱스 이다.
 B+트리를 사용한다
+MVCC기반
 
 “InnoDB에서는 테이블 자체가 Primary Key 기준으로 정렬된 B+Tree 구조입니다.”
 
