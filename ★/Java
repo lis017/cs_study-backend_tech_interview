@@ -23,4 +23,5 @@ metaspace
 
 G1이 뭐죠
 ->G1 GC는 Heap을 Region 단위로 나누어, 우선적으로 많이 찬 영역부터 수집하는 서버용 저지연 Garbage Collector입니다.
+->full gc 최소화 목적
 ->장점: 힙 전체가 아닌 region단위로 검사하기에 STW(stop the world)단축, 더 제어가능
