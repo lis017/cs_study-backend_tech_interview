@@ -3,13 +3,9 @@ undo log
 
 Redo Log는 복구용, Undo는 되돌리기용 (구분만 알면 충분)
 --------------
-
 isolation level
 ->serializable: 트랜잭션을 순차 실행한 것처럼 보이게 만드는 최고 격리 수준
-->Repeatable Read
-👉 “내가 트랜잭션 시작하고 읽은 데이터는, 끝날 때까지 절대 안 바뀐 것처럼 보인다.”
-
-Read Committed는 커밋된 데이터만 보장하고, Repeatable Read는 동일 트랜잭션 내 조회 일관성을 보장하며, Serializable은 트랜잭션을 순차 실행처럼 동작시켜 팬텀까지 방지합니다.
+Read Committed는 커밋된 데이터만 보장하고, Repeatable Read는 동일 트랜잭션 내 조회 일관성을 보장하며, Serializable은 팬텀까지 방지합니다.
 
 Repeatable Read는 MVCC로 구현됩니다. Serializable은 범위 락을 사용합니다.
 
