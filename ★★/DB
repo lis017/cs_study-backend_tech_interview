@@ -26,7 +26,7 @@ ACID
 다른 Shared Lock 허용
 Exclusive Lock은 막음
 👉 SELECT … FOR SHARE
-2. Exclusive Lock (X Lock, 배타락)
+2. Exclusive Lock (X Lock, 배타락)(뮤텍스)
 쓰기용
 다른 모든 락 차단
 👉 UPDATE / DELETE 시 사용
