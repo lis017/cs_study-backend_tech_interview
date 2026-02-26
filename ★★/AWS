@@ -1,0 +1,10 @@
+🔹 VPC란?
+→ AWS 계정 전용 가상 네트워크
+🔹 Subnet 종류
+Public Subnet
+Private Subnet
+🔹 ALB vs NLB 차이
+→ ALB: L7
+→ NLB: L4
+🔹 ECS란?
+→ 컨테이너 오케스트레이션 서비스
