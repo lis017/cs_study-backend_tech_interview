@@ -1,0 +1,8 @@
+🔹 Web Server vs WAS 차이
+→ Web Server: 정적 리소스 처리
+→ WAS: 비즈니스 로직 처리
+🔹 Apache / Nginx는 OSI 몇 계층?
+→ L7 (Application Layer)
+🔹 L4 vs L7 Load Balancer 차이
+→ L4: IP/Port 기반
+→ L7: HTTP URI 기반
