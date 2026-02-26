@@ -181,26 +181,16 @@ CAP 이론
 -> CAP 이론은 분산 환경에서 모두를 만족하는 시스템은 없다는 이론입니다
 Eventual Consistency(궁극적 일관성)
 -> Eventual Consistency는 Consistency(일관성)를 완전히 보장하지는 않지만, 결과적으로 언젠가는 Conssistency가 보장됨을 의미합니다.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+------------------
   QueryDSL 이란?
   -> 타입 세이프한 SQL 쿼리형태를 자바 코드로 작성할 수 있게 해주는 프레임워크다.
-  -> 주로 하이버네이트, JPA 같은 ORM 프레임워크와 함께 사용된다.
+
+장점
+-> 가독성+ 타입안전 + null은자동무시
+
+주의점 개선 경험
+->(null safe)delete시 조건없으면 전체삭제 -> where절 떼서 null이면 null. 아니면 해당 연도가 들어가도록
+->페이징시 count분리 -> 불필요 jojn제거
+
+null safe, null자동무시는 QueryDSL만 가능한가?
+->다르것도 되지만 QueryDSL이 가장 간결.
