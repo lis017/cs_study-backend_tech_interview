@@ -21,6 +21,7 @@ Undo log로 이전 버전 관리 (MySQL InnoDB)
 Inno db는 MVCC기반
 
 MVCC면 X락이어도 Select는 가능함(이전버전 읽어짐)
+(mysql. oracle등)
 
 --------
 
