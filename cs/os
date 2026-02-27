@@ -5,7 +5,7 @@
 ->저는 어떤걸로 동기화 했습니다
 synchronized로 redis가 비워졌을때 동시에 많은 조회가 올경우 순간db부하를 방지.
 ->어떤 동기화방법들이 있죠?
-synchronized
+synchronized - 뮤텍스
 ReentrantLock - “synchronized보다 기능이 많고 재진입 가능하며 공정성 제어 가능”
 Atomic 클래스 등 - 락 없이 원자적 연산(CAS) 제공,
 ->“그럼 스택은 공유하나요?”
