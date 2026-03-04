@@ -4,6 +4,12 @@ gc log 어찌봤는가
 ->Pause Full
 Pause Young
 Before -> After Heap 수치
+
+​2. Mark and Sweep (정확합니다!)
+​민혁 님이 이해하신 게 정확히 맞아요.
+​Mark: GC Root(스택 변수, 정적 변수 등)로부터 연결된 객체를 타고 내려가며 **"사용 중"**이라고 표시하는 과정.
+​Sweep: Mark 되지 않은(연결이 끊긴) 객체들을 메모리에서 지워버리는 과정.
+​하나 더 (Compact): 지우고 난 뒤 파편화된 메모리 영역을 차곡차곡 모아주는 것까지 알면 완벽합니다
 --------------
 직렬화(Serialization)
 → 객체를 네트워크/응답용 형태(JSON, XML 등)로 변환하는 과정
